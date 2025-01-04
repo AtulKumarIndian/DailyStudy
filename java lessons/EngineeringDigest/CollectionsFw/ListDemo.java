@@ -85,6 +85,7 @@ public class ListDemo {
         System.out.println(fruits);
         //descending order sorting
         //take a functional interface compartor
+        //String provides the compareTo method
         fruits.sort((a,b) -> b.compareTo(a));
         System.out.println(fruits);
         fruits.sort(new StringLengthComparator());
