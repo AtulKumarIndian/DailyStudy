@@ -19,3 +19,5 @@ Abstraction means to hide implementation using interface and abstract classes.
 defn - it means to show what an object does and hides how it does it.
 It highlights the work that the object performs.
 
+Polymorphism -  Dynamic - @Override   same sign.  - Derived class overrides
+ compile-time polymorphism - static - Method overloading  diff sign - same class diff signature or return type
