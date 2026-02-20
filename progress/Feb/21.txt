@@ -1,0 +1,24 @@
+class Atul{
+  private int a;
+  Atul(int x){
+    a = x;
+  }
+  public int getValue(){
+    return a;
+  }
+}
+
+
+class Ayan extends Atul{
+  Ayan(int x){
+    super(x);
+  }
+  public int getValue(){
+    return a; // here a is pvt. to access it you must declare a public in Atul.
+  }
+}
+Main - 
+Ayan at = new Ayan(25);
+int ans = at.getValue();
+System.out.println(ans);
+
