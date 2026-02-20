@@ -1,0 +1,27 @@
+Today Started UML - used to visualize a system’s behavior and structure.
+
+Structural things- system's physical aspects,- class, object, interface, use case, actor, component, and node.
+Class Diagram
+Behavioral things - represent the various system's interactions and functions, such as state machines, activity, and interaction diagrams. 
+Diagram - ( Use case , sequence, activity )
+
+Activity diagrams: These describe the various interactions performed by different components present in the system.
+Interaction diagrams: These diagrams describe the message flow between the different components present in the system.
+USE CASE
+Association, 
+Generalization,
+Include - always useCase is used
+Extend - might useCase is used
+
+CLASS
+Aggregation - object exist independently . Room has table, lamp, cupboard.
+Composition - Strong relationship . Chair has arms, legs
+
+SEQUENCE
+Lifeline
+Activation bars
+Messages - Synchronous - Filled arrowhead, Asynchronous - Open arrowhead.
+    Synchronous return messages using a dotted line with a filled arrowhead.
+    Create, destroy, found, lost.
+
+
