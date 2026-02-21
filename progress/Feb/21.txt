@@ -22,3 +22,74 @@ Ayan at = new Ayan(25);
 int ans = at.getValue();
 System.out.println(ans);
 
+
+Y this code as the decorator pattern declares the abstract decorator with protected & final base item's interface.. 
+Abstract Decorator has an interface and is an interface of base Item.
+
+abstract class TextDecorator implements TextView {
+    protected final TextView inner; // protected giving access to concrete decorators and final so noone changes this inner Item.
+
+    public TextDecorator(TextView inner) {
+        this.inner = inner;
+    }
+}
+
+abstract class PizzaDecorator implements Pizza {
+
+    protected final Pizza pizza; // can't declare public or private (child can't access then)
+
+    public PizzaDecorator(Pizza pizza) {
+
+        this.pizza = pizza;
+
+    }
+
+    @Override
+
+    public double getCost() {
+
+        double cost = this.pizza.getCost();
+
+        return cost;
+
+    }
+
+    @Override
+
+    public String getDescription() {
+
+        String desc = this.pizza.getDescription();
+
+        return desc;
+
+    }
+
+}
+
+Concrete Decorator 
+
+class CheeseDecorator extends PizzaDecorator {
+
+    public CheeseDecorator(Pizza pizza) {
+
+        super(pizza);
+
+    }
+
+    @Override
+
+    public double getCost() {
+
+        return pizza.getCost() + 1.50; // we have access to pizza object in the abstract decorator
+
+    }
+
+    @Override
+
+    public String getDescription() {
+
+        return pizza.getDescription() + ", cheese";
+
+    }
+
+}
