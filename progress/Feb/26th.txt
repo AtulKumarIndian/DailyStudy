@@ -1,0 +1,13 @@
+Not much progress on personal front. 
+Did ofc work mostly. merged two big MRs. One was the assignCondition component. 
+Another was gridApi based changes.. the filter issue.. 
+Have to start LLD on ShubhPatel. 
+FlipMed - appointment
+Logger
+Chess 
+Car Rental
+Snakes and Ladder
+Parking lot
+
+heap 
+hashMap
